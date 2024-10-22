@@ -62,20 +62,24 @@ Move the "MyLab" directory to the "Documents" folder.
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
 ## COMMAND:
+```
 @echo off
 mkdir %userprofile%\Desktop\DocBackup
 copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
 echo Backup completed successfully!
+```
 
 ![image](https://github.com/user-attachments/assets/e9087b32-ac17-4b4d-8f85-7939b03fe79f)
 
 ## COMMAND:
+```
 
 @echo off
 mkdir %userprofile%\Desktop\DocBackup
 copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
 del %userprofile%\Documents\*.docx
 echo Backup and deletion completed successfully!
+```
 
 
 ## OUTPUT
